@@ -1,10 +1,10 @@
-version: 0.2
+version: 0.2 
 phases:
   install:
     runtime-versions:
-      python: 3.11
+      python: 3.11 # select appropriate version
   build:
     commands:
-      - aws s3 cp text.txt s3://testbucketjpg/
+      - aws s3 cp text.txt s3://yourbacketname/
   post_build:
     commands:
